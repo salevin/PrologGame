@@ -250,7 +250,7 @@ go :-
   assert(has(nothing)),
   assert(at(you,valley)),
   assert(at(ogre,maze(3))),
-  assert(at(key,path)),
+  assert(at(key,maze(2))),
   assert(at(treasure,mountaintop)),
   write('This is an adventure game. \n'),
   write('Legal moves are left, right, or forward.\n'),
