@@ -110,7 +110,7 @@ ogre.
 key :-
   at(key,Loc),
   at(you,Loc),
-  write('There is a shiny key and you pick it up'),
+  write('There is a shiny key and you pick it up\n'),
   retract(at(key,Loc)),
   assert(has(key)),
   !.
@@ -138,9 +138,9 @@ gate :-
  */
 gate :-
   at(you,gate),
-  write('You don\'t have the key to continue'),
-  write('you are forced to turn back'),
-  write('you are now at the fork in the road'),
+  write('You don\'t have the key to continue\n'),
+  write('you are forced to turn back\n'),
+  write('you are now at the fork in the road\n'),
   retract(at(you,gate)),
   assert(at(you,fork)),
   !.
